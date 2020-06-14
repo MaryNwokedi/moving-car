@@ -14,22 +14,19 @@ body {
   width: 70vw;
   position: relative;
   margin: 5rem auto;
-  background-image: url("./assets/Img_1.png");
   background-size: cover;
   box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
   overflow-x: hidden;
 }
 
 .surface {
-  height: 140px;
+  height: 100%;
   width: 500%;
-  background: url("./assets/Img_02.png");
+  background: url("./assets/road.jpg");
+  background-size: contain;
   display: block;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
   background-repeat: repeat-x;
-  animation: moveRight 6s linear infinite;
+  animation: moveRight 10s linear infinite;
 }
 
 .car {
@@ -49,7 +46,7 @@ body {
 
 @keyframes suspension {
   100% {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
   }
 
   50% {
